@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        /*h1 é box-level, mas usando o display podemos transforma-lo em inline*/
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*border segue a ordem
+            border-width
+            border-style
+            border-color*/
+            border: 10px groove darkgreen;
+          
+            /*padding segue o formato do relógio: 
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            PS: se todas as medidas forem iguais, basta digitar o valor uma única vez.
+            PS2: se dois valores forem informados, top e bottom assumirão o primeiro valor informado, right e left assumirão o segundo valor
+            */
+            padding: 10px;
+
+            /*margin segue a mesma lógica do padding
+            PS: posso usar o auto para centralizar.*/
+            margin: 20px auto 40px auto;
+
+            /*outline é muito pouco utilizado, mas segue a ordem:
+            outline-width: 
+            outline-style: 
+            outline-color: 
+            */
+            outline: 5px dashed salmon;
+
+        }
+        /*a é inline, mas com display podemos transforma-lo em box-level*/
+        a{
+            border: 10px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
