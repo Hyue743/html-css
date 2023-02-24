@@ -55,7 +55,7 @@ section {
 }
 
 section>p {
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 section>h2 {
@@ -73,6 +73,11 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
     background-size: cover;
     background-attachment: fixed;
+}
+
+section.imagem>h2 {
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline;
 }
 
 section.imagem>p{
